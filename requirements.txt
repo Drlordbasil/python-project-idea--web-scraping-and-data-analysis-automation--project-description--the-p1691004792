@@ -1,0 +1,12 @@
+The package requirements for this Python program are:
+- requests
+- beautifulsoup4
+- pandas
+- matplotlib
+- nltk
+- scikit-learn
+
+You can install these packages using pip by running the following command:
+```
+pip install requests beautifulsoup4 pandas matplotlib nltk scikit-learn
+```
