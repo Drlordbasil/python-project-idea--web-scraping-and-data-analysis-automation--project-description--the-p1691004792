@@ -121,7 +121,8 @@ class SocialMediaAnalyzer:
     def run(self):
         social_media_data = self.scrape_social_media()
         if social_media_data:
-            social_media_insights = self.analyze_social_media(social_media_data)
+            social_media_insights = self.analyze_social_media(
+                social_media_data)
             print("Social Media Insights:", social_media_insights)
 
 
@@ -151,7 +152,8 @@ class ProductPriceComparator:
 
 
 def main():
-    news_urls = ['https://example_news_site.com/business', 'https://example_news_site.com/technology']
+    news_urls = ['https://example_news_site.com/business',
+                 'https://example_news_site.com/technology']
     news_analyzer = NewsAnalyzer(news_urls)
     news_analyzer.run()
 
