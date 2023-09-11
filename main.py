@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 import matplotlib.pyplot as plt
-from nltk.sentiment import SentimentIntensityAnalyzer
+from nltk.sentiment import SentimentIntensityAnalyzer as SIA
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error
@@ -28,7 +28,7 @@ class NewsAnalyzer:
         return articles
 
     def analyze_news_sentiment(self, articles):
-        sia = SentimentIntensityAnalyzer()
+        sia = SIA()
         sentiment_scores = []
         for article in articles:
             sentiment = sia.polarity_scores(article['headline'])
